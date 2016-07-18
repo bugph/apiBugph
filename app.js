@@ -19,7 +19,7 @@ app.get('/api/bugs', function (req, res) {
 app.get('/api/novos', function (req, res) {
   var data = req.query.ultimo;
   var novosBugs = bugs.filter(function(bug) {
-  	return bug.data > data;
+  	return bug.data > data && bug.data >=  moment().add(-1, 'hours').format("YYYYMMDDHHmmss");
   })
   res.jsonp(novosBugs.length);
 });
