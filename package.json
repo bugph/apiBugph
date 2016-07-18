@@ -1,0 +1,12 @@
+{
+  "name": "apibugph",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.7.1",
+    "express": "^4.14.0",
+    "moment": "^2.14.1",
+    "socket.io": "^1.4.8"
+  }
+}
